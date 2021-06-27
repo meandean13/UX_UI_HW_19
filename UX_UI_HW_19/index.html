@@ -17,11 +17,15 @@
       href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700;900&family=Tangerine:wght@700&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
     <link href="css/style.css" rel="stylesheet" type="text/css" />
   </head>
   <body>
     <nav class="header">
-      <button class="donate">DONATE</button>
+      <button id="donate">DONATE</button>
       <img
         class="logo"
         src="images/Header/AHA Logo.png"
@@ -29,6 +33,10 @@
         width="80"
         height="80"
       />
+      <form class="search" action="action_page.php">
+        <input type="text" placeholder="Search..." name="search" />
+        <button type="submit"><i class="fa fa-search"></i></button>
+      </form>
       <ul class="nav_links">
         <li><a href="#">Home</a></li>
         <li><a href="#">About AHA</a></li>
@@ -38,7 +46,7 @@
         <li><a href="#">Contact</a></li>
       </ul>
     </nav>
-    <div>
+    <div class="topPic">
       <img class="shero" src="images/Main image.png" alt="Girl in wheelchair" />
       <img
         class="motto"
@@ -61,13 +69,7 @@
         <h2>
           <p>Our Stories</p>
         </h2>
-
         <h3 class="caro">
-          <img
-            class="leftArrow"
-            src="images/Carousel/Vector.png"
-            alt="leftarrow"
-          />
           <br />
           <img class="tom" src="images/Carousel/TOM 1.png" alt="tom" />
           <img class="adam" src="images/Carousel/ADAM 1.png" alt="adam" />
@@ -78,11 +80,6 @@
             alt="camille"
           />
           <img class="mary" src="images/Carousel/MARY 1.png" alt="mary" />
-          <img
-            class="rightArrow"
-            src="images/Carousel/Vector-1.png"
-            alt="rightarrow"
-          />
         </h3>
       </div>
       <div>
@@ -125,5 +122,6 @@
         alt="footer"
       />
     </footer>
+    <script src="script.js"></script>
   </body>
 </html>
